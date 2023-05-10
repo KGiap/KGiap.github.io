@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Search</title>
-    <style>
-        section {
-            text-align: center;
-            margin-right: 2cm;
-            margin-top: 3cm;
-            display: contents;
-        }
-        
-        form input[type="text"] {
-            max-width: 12cm;
-            min-width: 3cm;
-            height: 1cm;
-            border-radius: 20px;
-            color: grey;
-        }
-        form input[type="submit"] {
-            height: 1.1cm;
-        }    
-        form input[type="submit"]:hover {
-            background-color: lightblue;
-        }
-        .logo p {
-            font-size: 2cm;
-        }
-        header {
-            text-align: right;
-            margin-right: 1cm;
-        }
-        a {
-            margin-right: 1cm;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <a href="index.html" style="text-decoration: none; color: black;">Google</a>
-        <a href="advanced.html" style="text-decoration: none; color: black;">Advanced Search</a>
-    </header>
-    <section>
-        <div class="logo">
-            <p>Google Image</p>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Search</title>
+        <style>
+            body {
+                text-align: center;
+                width: max-content;
+            }
+            .google-search-form {
+                text-align: center;
+            }
+            .logo {
+                font-size: 2cm;
+                margin-bottom: -1cm;
+            }
+            form {
+                text-align: center;
+            }
+            form input[type="text"] {
+                width: 12cm;
+                height: 0.7cm;
+                border-radius: 20px;
+            }
+            form  input[type="submit"] {
+                width:3.3cm;
+                height: 0.8cm;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+                border-radius: 20px;
+            }
+            header {
+                margin-left:28cm;
+                width: 15cm;
+            }
+            header a {
+                margin-right: 1cm;
+                display: inline;
+                width: 10cm;
+            }
+            .google-search-form {
+                text-align: center;
+                border-radius: 20px;
+                display:contents;
+                float:right;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="image.html" style="text-decoration: none; color: black; font-family: Arial, Helvetica, sans-serif;">Image Search</a>
+            <a href="advanced.html" style="text-decoration: none; color: black; font-family: Arial, Helvetica, sans-serif;">Advanced Search</a>
+        </header>
         </div>
-        <form action="http://images.google.com/images">
-            <p><b>Copy the link of the image and put it down below</b></p>
-            <input type="text" name="q" />
-            <input type="submit" value="Search Google Images" />
-        </form>
-    </section>
-</body>
+        <div class="google-search-form">
+            <form action="https://www.google.com/search">
+                <div class="logo">
+                    <p>Google</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" name="q" placeholder="Type here to search something :v">
+                    <i class="fa fa-search"></i>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
