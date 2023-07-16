@@ -12,25 +12,23 @@
             padding: 0;
         }
         body {
-            background:url("https://img.freepik.com/premium-photo/cherry-blossom-background-with-beautiful-flower-high-quality_770022-100.jpg?w=2000");
-            background-size:100cm 100cm;
+            background: #100b0b;
             background-repeat:no-repeat;
             font-family: Arial, Helvetica, sans-serif;
             display: grid;
-        }
-        body h1,p {
-            text-align: center;
+            color: whitesmoke;
         }
         .container {
-            display: flex;
+            display: grid;
+            margin-left: 5%;
+            margin-right: 5%;
         }
         header {
-            max-width:50cm;
+            width: 100%;
             display:grid;
-            background-color: #333;
             grid-auto-flow: column;
-            color: aliceblue;
             align-items: center;
+            background-color: #100b0b;
         }
         header .web-logo img {
             float: left;
@@ -38,16 +36,35 @@
             border-radius: 50px;
         }
         header .menu ul {
-            grid-auto-flow: column;
             display: grid;
+            margin-left: 20%;
+            grid-template-columns: 60% 40%;
             list-style-type: none;
         }
         header .social-networks ul {
             display: grid;
+            grid-template-columns: 60% 40%;
             list-style-type: none;
-            grid-auto-flow: column;
         }
-        section {
+        h1 {
+            margin-top: 2cm;
+            color: #2caf28;
+        }
+        hr {
+            width: 1.2cm;
+            height: 0.1cm;
+            background-color: #2caf28;
+            border: none;
+        }
+        p {
+            font-size: 0.6cm;
+        }
+        .projects ul li {
+            margin-top: 1cm;
+            list-style-type: none;
+            margin-bottom: 5cm;
+        }
+        /* section {
             flex: 5;
             font-family: Arial, Helvetica, sans-serif;
             height: 20cm;
@@ -110,39 +127,26 @@
             font-size: larger;
             font-style: oblique;
         }
-        aside {
-            flex: 2;
-            float: right;
-            margin-left: 0;
-            background-color: #222;
-            color: aliceblue;
-            border-radius: 20px;
-        }
-        aside h2 {
-            text-align: center;
-        }
-        aside ul {
-            list-style-type: none;
-            display: grid;
-        }
-        aside ul li {
-            margin: 0.3cm;
-        }
-        a {
+        */
+        a:not(a[class="menu-item"]) {
             text-decoration: none;
-            color: aliceblue;
+            color: rgb(126, 228, 23);
+            font-size: larger;
+            margin-top: 2cm;
+        }
+        a[class="menu-item"] {
+            color: white;
+            font-size: 0.65cm;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="web-logo">
-            <img src="info-website.png" alt="website-logo" width="35px" height="35px">
-        </div>
         <div class="menu">
             <ul>
-                <li id="about"><a href="index.html">About Us</a></li>
-                <li id="contact"><a href="contact.html">Contact</a></li>
+                <li id="about"><a class="menu-item" href="index.html">About Us</a></li>
+                <li id="contact"><a class="menu-item" href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="social-networks">
@@ -153,8 +157,13 @@
         </div>
     </header>
     <div class="container">
-    <section>
-        <h1>This website is created to make fun stuffs!</h1>
+        <div class="web-intro">
+            <h1>About Our Website</h1>
+            <hr>
+            <p>I created this website just to make some fun stuffs with my friend, and I also want to have something to show on our CV (but anyway I don't think that far)</p>
+        </div>
+    <!-- <section>
+         <h1>This website is created to make fun stuffs!</h1>
         <p>Here are 2 members who contributes for the website:</p>
         <br>
         <audio autoplay controls>
@@ -235,24 +244,38 @@ Quê quán: Bắc Giang
                 </div>
             </div>
         </div>
-    </section>
-        <aside>
-            <h2>Our projects</h2>
-            <hr>
-            <ul>
-                <li><a href="Fake Google Interface/fake-google-search.html" >Project 1:Google Fake</a></li>
-                <li><a href="Project 2/Pendulum-and-Whale.html">Project 2:Pendulum & Whale</a></li>
-                <li>Project 3</li>
-                <li>Project 4</li>
-                <li>Project 5</li>
-                <li>Project 6</li>
-                <li>Project 7</li>
-                <li>Project 8</li>
-                <li>Project 9</li>
-                <li>Project 10</li>
-                <li>Project 11</li>
-            </ul>
-        </aside>
+    </section> -->
+            <div class="projects">
+                <h1>Our projects</h1>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="Project 2/Pendulum-and-Whale.html">Project 2:Pendulum & Whale <= link</a>
+                        <br>
+                        <img src="pendulum-whale.jpg" alt="pendulum-whale" width="600cm" height="300cm">
+                        <p>I made a moving pink Whale, and it looks funny</p>
+                        <p>Actually the whale should be made with 3D model, but I don't know how to do that</p>
+                        <p>Sorry If the whale is too ugly :")</p>
+                    </li>
+                    <li>
+                        <a href="Fake Google Interface/fake-google-search.html" >Project 1:Google Fake <= link</a>
+                        <br>
+                        <img src="fake-google.jpg" alt="fake-google" width="600cm" height="300cm">
+                        <p>This Fake Google Interface was made when I studied CS50 Programming Course, but ... I haven't finished that course</p>                        
+                        <p>I know that it looks ugly, but at least ... Oh what am I going to say , I'm too lazy :(</p>
+                        <p>If I studied harder, I could have made something even more special</p>
+                    </li>
+                    <!-- <li>Project 3</li>
+                    <li>Project 4</li>
+                    <li>Project 5</li>
+                    <li>Project 6</li>
+                    <li>Project 7</li>
+                    <li>Project 8</li>
+                    <li>Project 9</li>
+                    <li>Project 10</li>
+                    <li>Project 11</li> -->
+                </ul>
+            </div>
         </div>
 </body>
 </html>

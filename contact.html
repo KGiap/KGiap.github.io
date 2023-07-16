@@ -14,12 +14,17 @@
         body {
             margin: 1cm;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: #100b0b;
+            background: url("Sky-Stars-Pattern.jpg");
+            background-size: cover;
+            
         }
         h1 {
-            color: #555;
+            color: #eae0e0;
         }
         .content-container {
             display: grid;
+            justify-content: space-evenly;
         }
         .content-container h1 {
             font-size:25px;
@@ -38,7 +43,7 @@
             width: 8cm;
         }
         .contact_info ul li {
-            color: grey;
+            color: #eae0e0;
             list-style-type: none;
             margin-bottom: 1cm;
         }
@@ -52,9 +57,9 @@
             margin-bottom: 0.2cm;
             border-color: lightslategrey;
         }
-        .user-info ul li #user_name,#user_email,#subject {
+        .user-info ul li #user_name,#user_email,#subject,#user_message {
             height: 1cm;
-            max-width: 16cm;
+            width:100%;
         }
         #submit_button {
             width: 2cm;
@@ -70,12 +75,14 @@
 
 </head>
 <body>
-    
+    <div class="return-button">
+        <a href="index.html"><i class="fa fa-arrow-left" width="2cm" height="2cm" style="color: white; font-size: 0.75cm;"></i></a>
+    </div>
+    <div class="content-container">
         <header>
             <h1>CONTACT US</h1>
             <hr>
         </header>
-    <div class="content-container">
         <div class="content">
             <div class="contact_info">
                 <h1>Contact Info</h1>
