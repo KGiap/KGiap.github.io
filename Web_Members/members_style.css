@@ -4,7 +4,7 @@
         }
         body {
             background: url("anh-bau-troi-dem-day-sao-dep-nhat.jpg");
-            background-size: 100%;
+            background-size: cover;
             background-repeat:no-repeat;
             font-family: Arial, Helvetica, sans-serif;
             display: grid;
