@@ -76,9 +76,12 @@
             font-size: 0.65cm;
             text-decoration: none;
         }
+        #audio {
+            display: none;
+        }
     </style>
 </head>
-<body>
+<body onclick="music()">
     <header>
         <div class="menu">
             <ul>
@@ -131,5 +134,13 @@
                 </ul>
             </div>
         </div>
+    <script>
+        function music() {
+            document.getElementById("audio").play();
+        }
+    </script>
+    <audio autoplay controls id="audio">
+        <source src="TaiNhacHay.Biz - Ấn Nút Nhớ...Thả Giấc Mơ (Mai Này Con Lớn Lên).mp3">
+    </audio>
 </body>
 </html>
