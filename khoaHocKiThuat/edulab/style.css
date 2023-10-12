@@ -826,8 +826,9 @@ ul > li {
 	/*font-size: 4rem;*/
 	font-weight: bold;
 	background: transparent;
+	background-color: rgb(87, 87, 87);
 	border: none;
-	/*color: #fff;*/
+	color: #fff;
 	cursor: pointer;
 }
 
